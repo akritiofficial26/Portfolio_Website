@@ -1,11 +1,13 @@
 import React from 'react';
 import './About.css';
+import profileImg from './image.jpg';
+import resumePdf from './Akriti_Updated_Resume.pdf';
 
 const About = () => {
   const facts = [
     { icon: '🎓', label: 'Education', value: 'B.Tech in Computer Science' },
-    { icon: '📍', label: 'Location', value: 'New Delhi, India' },
-    { icon: '💼', label: 'Experience', value: '2+ Years in Leadership & Development' },
+    { icon: '📍', label: 'Location', value: 'Gurgram, India' },
+    // { icon: '💼', label: 'Experience', value: '2+ Years in Leadership & Development' },
     { icon: '🌐', label: 'Languages', value: 'Hindi, English' },
   ];
 
@@ -16,7 +18,7 @@ const About = () => {
         <div className="about__visual">
           <div className="about__img-wrap">
             <div className="about__img-placeholder">
-              <span>A</span>
+              <img src={profileImg} alt="Akriti" className="about__img" />
             </div>
             <div className="about__img-badge">
               <span>🔥</span>
@@ -49,13 +51,13 @@ const About = () => {
           </h2>
 
           <p className="about__para">
-            I'm <strong>Akriti</strong> — a passionate full-stack developer and UI/UX
-            enthusiast based in New Delhi. I love turning complex problems into
+            I'm <strong>Akriti Kumari</strong> — a passionate front-end developer and UI/UX
+            enthusiast based in Gurugram. I love turning complex problems into
             simple, beautiful, and intuitive solutions.
           </p>
 
           <p className="about__para">
-            With over 3 years of hands-on experience, I've worked across the entire
+            I've worked across the entire
             product lifecycle — from ideation and wireframing to shipping production-
             ready code. I specialise in React, Node.js, and modern design systems.
           </p>
@@ -68,10 +70,11 @@ const About = () => {
           <div className="about__actions">
             <a href="#contact" className="btn btn-primary">Work With Me</a>
             <a
-              href="/resume.pdf"
+              href={resumePdf}
               className="btn btn-outline"
               target="_blank"
               rel="noreferrer"
+              download
             >
               Download CV
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

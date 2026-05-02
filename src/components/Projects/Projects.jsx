@@ -5,60 +5,70 @@ const projects = [
   {
     id: 1,
     tag: 'Full Stack',
-    title: 'Workaligr',
-    desc: 'A modern e-commerce platform with real-time inventory, payment integration, and an AI-powered recommendation engine.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    title: 'Workalignr',
+    desc: 'A smart employee management system designed to streamline workforce operations with real-time tracking, role-based access, and performance insights. It simplifies HR processes like attendance, payroll integration, and team coordination through an intuitive dashboard and scalable architecture.',
+    tech: ['React', 'Node.js', 'Tailwind css', 'Express.js','PostgreSql'],
     color: '#c8f04a',
     emoji: '🛒',
+    githubUrl: 'https://github.com/adisharma-git/employee-management-system',
+    liveUrl: 'https://www.workalignr.in/landingPage',
   },
   {
     id: 2,
-    tag: 'UI/UX + Dev',
+    tag: 'Dev',
     title: 'Library Attendance System',
-    desc: 'A Kanban-style project management tool with drag-and-drop, team collaboration, and smart deadline reminders.',
-    tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
+    desc: 'A digital library management and attendance system that automates student check-ins, tracks usage patterns, and maintains records efficiently. Built with a structured backend and clean UI, it enhances transparency and reduces manual workload for administrators.',
+    tech: ['React', 'Node.js', 'Tailwind css', 'Express.js','PostgreSql'],
     color: '#a78bfa',
     emoji: '📋',
+    githubUrl: 'https://github.com/akritiofficial26/Library_attendance_system',
+    liveUrl: '',
   },
   {
     id: 3,
     tag: 'Frontend',
     title: 'CafeNest',
-    desc: 'A digital gallery platform for independent artists to showcase and sell their work with NFT minting support.',
-    tech: ['React', 'Tailwind', 'Web3.js', 'IPFS'],
+    desc: 'A modern and visually engaging website for a coffee brand, designed to showcase products, menu, and brand story. Focused on smooth user experience, aesthetic UI, and responsive design, it creates a warm and inviting digital presence for customers.A digital gallery platform for independent artists to showcase and sell their work with NFT minting support.',
+    tech: ['React', 'Tailwind'],
     color: '#f97316',
     emoji: '🎨',
+    githubUrl: 'https://github.com/akritiofficial26/Cafe-Nest',
+    liveUrl: '',
   },
   {
     id: 4,
     tag: 'UI/UX',
     title: 'Heal App',
-    desc: 'A high-performance REST & GraphQL API for real-time analytics dashboards with sub-100ms response times.',
-    tech: ['Node.js', 'GraphQL', 'Redis', 'Docker'],
+    desc: 'A user-centric health application tailored for women managing PCOS/PCOD. It helps track symptoms, cycles, and lifestyle habits while providing personalized insights and wellness recommendations to support better health decisions.gh-performance REST & GraphQL API for real-time analytics dashboards with sub-100ms response times.',
+    tech: ['Figma'],
     color: '#38bdf8',
     emoji: '📊',
+    liveUrl: 'https://www.figma.com/design/TFaJoDFTmg3QES3maUCYaY/HEAL?t=JuVocuLZuv3qtazk-0',
   },
   {
     id: 5,
     tag: 'ui/ux',
-    title: 'MoodMap',
-    desc: 'A mental wellness app that tracks mood patterns and offers AI-guided journaling prompts and insights.',
-    tech: ['React Native', 'Firebase', 'OpenAI API'],
+    title: 'Jwels',
+    desc: 'A sleek and elegant UI/UX design for a jewelry e-commerce app, focused on premium user experience. It emphasizes product visualization, smooth navigation, and a luxurious feel to enhance user engagement and conversion.ental wellness app that tracks mood patterns and offers AI-guided journaling prompts and insights.',
+    tech: ['Figma'],
     color: '#fb7185',
     emoji: '🧠',
+    liveUrl: 'https://www.figma.com/design/XjWsJ3lDIiDL4STBcwsweA/Jewelry-app-design?node-id=0-1&p=f&t=JuVocuLZuv3qtazk-0',
   },
-  {
-    id: 6,
-    tag: 'Full Stack',
-    title: 'CodeMeet',
-    desc: 'Real-time collaborative code editor with live pair programming, video chat, and interview mode.',
-    tech: ['React', 'Socket.io', 'Monaco Editor', 'WebRTC'],
-    color: '#34d399',
-    emoji: '💻',
-  },
+  // {
+  //   id: 6,
+  //   tag: 'Full Stack',
+  //   title: 'CodeMeet',
+  //   desc: 'Real-time collaborative code editor with live pair programming, video chat, and interview mode.',
+  //   tech: ['React', 'Socket.io', 'Monaco Editor', 'WebRTC'],
+  //   color: '#34d399',
+  //   emoji: '💻',
+  // },
 ];
 
-const filters = ['All', 'Development', 'Designing'];
+const filters = ['All'];
+
+// const filters = ['All', 'Development', 'Designing'];
 
 const Projects = () => {
   const [active, setActive] = useState('All');
@@ -99,16 +109,20 @@ const Projects = () => {
               <div className="project-card__header">
                 <div className="project-card__emoji">{p.emoji}</div>
                 <div className="project-card__links">
-                  <a href="https://github.com" target="_blank" rel="noreferrer" className="project-card__link" aria-label="GitHub">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-                    </svg>
-                  </a>
-                  <a href="https://example.com" target="_blank" rel="noreferrer" className="project-card__link" aria-label="Live Demo">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
-                    </svg>
-                  </a>
+                  {p.githubUrl && (
+                    <a href={p.githubUrl} target="_blank" rel="noreferrer" className="project-card__link" aria-label="GitHub">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                      </svg>
+                    </a>
+                  )}
+                  {p.liveUrl && (
+                    <a href={p.liveUrl} target="_blank" rel="noreferrer" className="project-card__link" aria-label="Live Demo">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </div>
 
@@ -129,7 +143,7 @@ const Projects = () => {
 
         <div className="projects__cta">
           <a
-            href="https://github.com"
+            href="https://github.com/akritiofficial26"
             target="_blank"
             rel="noreferrer"
             className="btn btn-outline"
