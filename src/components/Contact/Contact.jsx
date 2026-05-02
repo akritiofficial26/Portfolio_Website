@@ -1,20 +1,53 @@
 import React, { useState } from 'react';
 import './Contact.css';
 
+const EMAILJS_SERVICE_ID  = 'service_uwr39s8';    
+const EMAILJS_TEMPLATE_ID = 'https://dashboard.emailjs.com/admin/templates/az15ffi';   
+const EMAILJS_PUBLIC_KEY  = 'CCHSyhT4s3PfMqvWe';    
+
 const Contact = () => {
-  const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
-  const [status, setStatus] = useState('idle'); 
+  const [form, setForm]     = useState({ name: '', email: '', subject: '', message: '' });
+  const [status, setStatus] = useState('idle');
+
   const handleChange = (e) => {
     setForm(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    setTimeout(() => {
+
+    try {
+      if (!window.emailjs) {
+        await new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+        window.emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
+      }
+
+      await window.emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name:  form.name,
+          from_email: form.email,
+          subject:    form.subject,
+          message:    form.message,
+          reply_to:   form.email,
+        }
+      );
+
       setStatus('sent');
       setForm({ name: '', email: '', subject: '', message: '' });
-    }, 1800);
+
+    } catch (err) {
+      console.error('EmailJS error:', err);
+      setStatus('error');
+    }
   };
 
   const contacts = [
@@ -97,6 +130,20 @@ const Contact = () => {
             </div>
           ) : (
             <form className="contact__form" onSubmit={handleSubmit} noValidate>
+
+              {status === 'error' && (
+                <div style={{
+                  background: 'rgba(239,68,68,0.1)',
+                  border: '1px solid rgba(239,68,68,0.4)',
+                  borderRadius: '10px',
+                  padding: '12px 16px',
+                  fontSize: '13px',
+                  color: '#f87171',
+                }}>
+                  ⚠️ Something went wrong. Please try again or email me directly at akritiofficial26@gmail.com
+                </div>
+              )}
+
               <div className="contact__form-row">
                 <div className="contact__field">
                   <label htmlFor="name">Your Name</label>

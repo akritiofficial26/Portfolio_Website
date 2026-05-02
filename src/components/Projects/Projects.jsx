@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     tag: 'Full Stack',
-    title: 'ShopSphere',
+    title: 'Workaligr',
     desc: 'A modern e-commerce platform with real-time inventory, payment integration, and an AI-powered recommendation engine.',
     tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
     color: '#c8f04a',
@@ -14,7 +14,7 @@ const projects = [
   {
     id: 2,
     tag: 'UI/UX + Dev',
-    title: 'TaskFlow',
+    title: 'Library Attendance System',
     desc: 'A Kanban-style project management tool with drag-and-drop, team collaboration, and smart deadline reminders.',
     tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
     color: '#a78bfa',
@@ -23,7 +23,7 @@ const projects = [
   {
     id: 3,
     tag: 'Frontend',
-    title: 'ArtSpace',
+    title: 'CafeNest',
     desc: 'A digital gallery platform for independent artists to showcase and sell their work with NFT minting support.',
     tech: ['React', 'Tailwind', 'Web3.js', 'IPFS'],
     color: '#f97316',
@@ -31,8 +31,8 @@ const projects = [
   },
   {
     id: 4,
-    tag: 'Backend',
-    title: 'DataPulse API',
+    tag: 'UI/UX',
+    title: 'Heal App',
     desc: 'A high-performance REST & GraphQL API for real-time analytics dashboards with sub-100ms response times.',
     tech: ['Node.js', 'GraphQL', 'Redis', 'Docker'],
     color: '#38bdf8',
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     id: 5,
-    tag: 'Mobile',
+    tag: 'ui/ux',
     title: 'MoodMap',
     desc: 'A mental wellness app that tracks mood patterns and offers AI-guided journaling prompts and insights.',
     tech: ['React Native', 'Firebase', 'OpenAI API'],
