@@ -15,7 +15,7 @@ const journey = [
     current: false,
     points: [
       'Enrolled in B.Tech Computer Science & Engineering — the spark that started it all.',
-      'Got introduced to programming fundamentals and fell in love with problem solving.',
+      'Got introduced to programming fundamentals and problem solving.',
       'Began exploring web technologies: HTML, CSS, and JavaScript for the first time.',
     ],
   },
@@ -51,8 +51,8 @@ const journey = [
       'Elected Chair of IEEE WIE — organized 15+ technical events including Utkrisht and IEEE ICACCM International Conference.',
       'Managed logistics, budgeting ($1600), and speaker coordination for hybrid national and international events.',
       'Published research on AR-based patient tracking in autonomous healthcare — achieved 92% detection accuracy.',
-      'Built the Employee Management System using React, Node.js, Express.js and MySQL.',
       'Won 1st Runner-Up at the 3D Printing competition.',
+      'Built the Library Attendance System with dashboard analytics and Excel export functionality.',
     ],
   },
   {
@@ -70,7 +70,7 @@ const journey = [
       'Landed my first professional role as Frontend Developer at Saukhyam Foundation.',
       'Working on the CARE project — responsive UIs for a healthcare app addressing PCOS/PCOD concerns.',
       'Published second research paper on Multi-Objective Optimization of RC Buildings using NSGA-II.',
-      'Built the Library Attendance System with dashboard analytics and Excel export functionality.',
+      'worked on Employee Management System using React, Node.js, Express.js and PostgreSQL.',
     ],
   },
   {
@@ -79,15 +79,16 @@ const journey = [
     semester: 'Present',
     title: 'Still Writing...',
     subtitle: 'B.Tech CSE · Expected June 2026',
-    location: 'New Delhi, India',
+    location: 'Gurugram, India',
     type: 'Present',
     color: '#22c55e',
     icon: '🚀',
     current: true,
     points: [
       'Finishing B.Tech with a CGPA of 7.1/10.0 — final year, final push.',
-      'Actively sharpening TypeScript, Next.js, and contributing to open source.',
+      'Actively sharpening React.js, node.js, and contributing to open source.',
       'Open to full-time roles, freelance projects, and exciting collaborations.',
+      'working on Automated cafe ordering system using React, Tailwind CSS.',
       "The story isn't over — the best chapters are still being written. ✨",
     ],
   },
@@ -119,7 +120,7 @@ const TimelineItem = ({ item, index }) => {
         {item.current && <div className="exp-item__dot-pulse" />}
       </div>
 
-      <div className={`exp-item__year ${isLeft ? 'exp-item__year--right' : 'exp-item__year--left'}`}>
+      <div className={`exp-item__year ${isLeft ? 'exp-item__year--left' : 'exp-item__year--right'}`}>
         <span className="exp-item__year-label">{item.year}</span>
         <span className="exp-item__semester">{item.semester}</span>
       </div>
@@ -194,7 +195,7 @@ const Experience = () => {
 
           <div className="exp-timeline__cap exp-timeline__cap--top">
             <span>🌱</span>
-            <p>Where it all started</p>
+            
           </div>
 
           {journey.map((item, i) => (

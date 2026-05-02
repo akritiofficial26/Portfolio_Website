@@ -31,13 +31,13 @@
   position: relative;
   max-width: 960px;
   margin: 0 auto;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 
 /* Centre line */
 .exp-timeline__line {
   position: absolute;
-  top: 0; bottom: 0;
+  top: 0; bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
@@ -64,7 +64,7 @@
   z-index: 2;
 }
 .exp-timeline__cap--top { margin-bottom: 32px; }
-.exp-timeline__cap--bottom { margin-top: 40px; }
+.exp-timeline__cap--bottom { margin-top: 12px; }
 
 .exp-timeline__cap span,
 .exp-timeline__cap-dot span {
