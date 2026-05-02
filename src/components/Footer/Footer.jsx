@@ -59,7 +59,7 @@ const Footer = () => {
           <div className="footer__nav-title">Contact</div>
           <ul>
             <li><a href="mailto:akritiofficial26@gmail.com">akritiofficial26@gmail.com</a></li>
-            <li><span>New Delhi, India</span></li>
+            <li><span>Gurugram, India</span></li>
             <li><a href="tel:+911234567890">+918825309938</a></li>
           </ul>
         </div>

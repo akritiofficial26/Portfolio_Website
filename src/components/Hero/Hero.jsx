@@ -77,9 +77,9 @@ const Hero = () => {
 
         <div className="hero__socials">
           {[
-            { label: 'GitHub', href: '#', icon: 'GH' },
-            { label: 'LinkedIn', href: '#', icon: 'LI' },
-            { label: 'Twitter', href: '#', icon: 'TW' },
+            { label: 'GitHubhttps://github.com/akritiofficial26', href: '#', icon: 'GH' },
+            { label: 'https://www.linkedin.com/in/akriti-kumari-26a24b2b8/', href: '#', icon: 'LI' },
+            
           ].map(s => (
             <a key={s.label} href={s.href} className="hero__social-link" aria-label={s.label}>
               <span>{s.icon}</span>
@@ -109,16 +109,16 @@ const Hero = () => {
 
         <div className="hero__stat-cards">
           <div className="hero__stat-card">
-            <div className="hero__stat-number">1</div>
-            <div className="hero__stat-label">Years Experience</div>
+            <div className="hero__stat-number">6</div>
+            <div className="hero__stat-label">Month Experience</div>
           </div>
           <div className="hero__stat-card">
-            <div className="hero__stat-number">10+</div>
+            <div className="hero__stat-number">6+</div>
             <div className="hero__stat-label">Projects Done</div>
           </div>
           <div className="hero__stat-card">
-            <div className="hero__stat-number">20+</div>
-            <div className="hero__stat-label">Happy Clients</div>
+            <div className="hero__stat-number">5+</div>
+            <div className="hero__stat-label">Research Paper</div>
           </div>
         </div>
       </div>

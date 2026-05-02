@@ -72,7 +72,7 @@ const Contact = () => {
     {
       icon: '📍',
       label: 'Location',
-      value: 'New Delhi, India',
+      value: 'Gurugram, India',
       href: null,
     },
   ];
