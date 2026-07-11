@@ -9,7 +9,6 @@ const projects = [
     desc: "A smart employee management system designed to streamline workforce operations with real-time tracking, role-based access, and performance insights. It simplifies HR processes like attendance, payroll integration, and team coordination through an intuitive dashboard and scalable architecture.",
     tech: ["React", "Node.js", "Tailwind css", "Express.js", "PostgreSql"],
     color: "#c8f04a",
-    emoji: "🛒",
     githubUrl: "https://github.com/adisharma-git/employee-management-system",
     liveUrl: "https://www.workalignr.in/landingPage",
   },
@@ -20,7 +19,6 @@ const projects = [
     desc: "A digital library management and attendance system that automates student check-ins, tracks usage patterns, and maintains records efficiently. Built with a structured backend and clean UI, it enhances transparency and reduces manual workload for administrators.",
     tech: ["React", "Node.js", "Tailwind css", "Express.js", "PostgreSql"],
     color: "#a78bfa",
-    emoji: "📋",
     githubUrl: "https://github.com/akritiofficial26/Library_attendance_system",
     liveUrl: "",
   },
@@ -31,7 +29,6 @@ const projects = [
     desc: "A modern and visually engaging website for a coffee brand, designed to showcase products, menu, and brand story. Focused on smooth user experience, aesthetic UI, and responsive design, it creates a warm and inviting digital presence for customers.",
     tech: ["React", "Tailwind"],
     color: "#f97316",
-    emoji: "🎨",
     githubUrl: "https://github.com/akritiofficial26/Cafe-Nest",
     liveUrl: "",
   },
@@ -42,7 +39,6 @@ const projects = [
     desc: "A user-centric health application tailored for women managing PCOS/PCOD. It helps track symptoms, cycles, and lifestyle habits while providing personalized insights and wellness recommendations to support better health decisions.",
     tech: ["Figma"],
     color: "#38bdf8",
-    emoji: "📊",
     liveUrl:
       "https://www.figma.com/design/TFaJoDFTmg3QES3maUCYaY/HEAL?t=JuVocuLZuv3qtazk-0",
   },
@@ -53,7 +49,6 @@ const projects = [
     desc: "A sleek and elegant UI/UX design for a jewelry e-commerce app, focused on premium user experience. It emphasizes product visualization, smooth navigation, and a luxurious feel to enhance user engagement and conversion, A digital gallery platform for independent artists to showcase and sell their work with NFT minting support.",
     tech: ["Figma"],
     color: "#fb7185",
-    emoji: "🧠",
     liveUrl:
       "https://www.figma.com/design/XjWsJ3lDIiDL4STBcwsweA/Jewelry-app-design?node-id=0-1&p=f&t=JuVocuLZuv3qtazk-0",
   },
@@ -64,7 +59,6 @@ const projects = [
     desc: "Built a React.js educational platform with role-based access — enabling teachers to upload content, principals to moderate it, and students to stream approved broadcasts on a public page.",
     tech: ["React", "Tailwind css"],
     color: "#34d399",
-    emoji: "💻",
     githubUrl: "https://github.com/akritiofficial26/Content_Broadcasting_System",
     liveUrl: "https://content-broadcasting-system-steel.vercel.app/login",
   },
@@ -113,7 +107,7 @@ const Projects = () => {
               }}
             >
               <div className="project-card__header">
-                <div className="project-card__emoji">{p.emoji}</div>
+                <div className="project-card__emoji" aria-hidden="true" />
                 <div className="project-card__links">
                   {p.githubUrl && (
                     <a

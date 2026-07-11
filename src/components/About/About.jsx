@@ -5,10 +5,9 @@ import resumePdf from './Akriti_Updated_Resume.pdf';
 
 const About = () => {
   const facts = [
-    { icon: '🎓', label: 'Education', value: 'B.Tech in Computer Science' },
-    { icon: '📍', label: 'Location', value: 'Gurgram, India' },
-    // { icon: '💼', label: 'Experience', value: '2+ Years in Leadership & Development' },
-    { icon: '🌐', label: 'Languages', value: 'Hindi, English' },
+    { label: 'Education', value: 'B.Tech in Computer Science' },
+    { label: 'Location', value: 'Gurgram, India' },
+    { label: 'Languages', value: 'Hindi, English' },
   ];
 
   return (
@@ -21,7 +20,7 @@ const About = () => {
               <img src={profileImg} alt="Akriti" className="about__img" />
             </div>
             <div className="about__img-badge">
-              <span>🔥</span>
+                <span className="about__badge-dot" aria-hidden="true" />
               <div>
                 <strong>Open to Work</strong>
                 <p>Full-time / Freelance</p>
@@ -32,7 +31,7 @@ const About = () => {
           <div className="about__facts">
             {facts.map(f => (
               <div className="about__fact" key={f.label}>
-                <span className="about__fact-icon">{f.icon}</span>
+                <span className="about__fact-dot" aria-hidden="true" />
                 <div>
                   <div className="about__fact-label">{f.label}</div>
                   <div className="about__fact-value">{f.value}</div>

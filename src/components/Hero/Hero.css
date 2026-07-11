@@ -197,11 +197,15 @@
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  font-family: var(--font-display);
-  font-size: 5rem;
-  font-weight: 900;
-  color: var(--accent);
   box-shadow: 0 0 60px var(--accent-glow);
+  overflow: hidden;
+}
+
+.hero__avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero__orbit {
@@ -221,7 +225,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+}
+
+.hero__orbit-dot-mark {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 5px var(--accent-dim);
 }
 
 .hero__orbit-dot--1 { top: -22px; left: calc(50% - 22px); }

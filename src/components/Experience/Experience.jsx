@@ -11,7 +11,6 @@ const journey = [
     location: 'Dehradun, Uttarakhand',
     type: 'Education',
     color: '#38bdf8',
-    icon: '🎓',
     current: false,
     points: [
       'Enrolled in B.Tech Computer Science & Engineering — the spark that started it all.',
@@ -28,7 +27,6 @@ const journey = [
     location: 'Dehradun, Uttarakhand',
     type: 'Community',
     color: '#f97316',
-    icon: '⚡',
     current: false,
     points: [
       'Joined IEEE WIE (Women in Engineering) — discovered a passion for leadership and community building.',
@@ -45,7 +43,6 @@ const journey = [
     location: 'India',
     type: 'Leadership',
     color: '#a78bfa',
-    icon: '🏛️',
     current: false,
     points: [
       'Elected Chair of IEEE WIE — organized 15+ technical events including Utkrisht and IEEE ICACCM International Conference.',
@@ -64,7 +61,6 @@ const journey = [
     location: 'India',
     type: 'Work',
     color: '#c8f04a',
-    icon: '💻',
     current: false,
     points: [
       'Landed my first professional role as Frontend Developer at Saukhyam Foundation.',
@@ -82,14 +78,13 @@ const journey = [
     location: 'Gurugram, India',
     type: 'Present',
     color: '#22c55e',
-    icon: '🚀',
     current: true,
     points: [
       'Finishing B.Tech with a CGPA of 7.1/10.0 — final year, final push.',
       'Actively sharpening React.js, node.js, and contributing to open source.',
       'Open to full-time roles, freelance projects, and exciting collaborations.',
       'working on Automated cafe ordering system using React, Tailwind CSS.',
-      "The story isn't over — the best chapters are still being written. ✨",
+      "The story isn't over — the best chapters are still being written.",
     ],
   },
 ];
@@ -116,7 +111,7 @@ const TimelineItem = ({ item, index }) => {
       style={{ '--delay': `${index * 0.12}s`, '--card-accent': item.color }}
     >
       <div className="exp-item__dot">
-        <span>{item.icon}</span>
+        <span className="exp-item__dot-mark" aria-hidden="true" />
         {item.current && <div className="exp-item__dot-pulse" />}
       </div>
 
@@ -194,7 +189,7 @@ const Experience = () => {
           </div>
 
           <div className="exp-timeline__cap exp-timeline__cap--top">
-            <span>🌱</span>
+            <span className="exp-timeline__cap-mark" aria-hidden="true" />
             
           </div>
 
@@ -204,7 +199,7 @@ const Experience = () => {
 
           <div className="exp-timeline__cap exp-timeline__cap--bottom">
             <div className="exp-timeline__cap-dot">
-              <span>⭐</span>
+              <span className="exp-timeline__cap-mark" aria-hidden="true" />
               <div className="exp-timeline__cap-pulse" />
             </div>
             <p>The story continues…</p>

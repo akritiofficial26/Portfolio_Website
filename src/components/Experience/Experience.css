@@ -66,8 +66,7 @@
 .exp-timeline__cap--top { margin-bottom: 32px; }
 .exp-timeline__cap--bottom { margin-top: 12px; }
 
-.exp-timeline__cap span,
-.exp-timeline__cap-dot span {
+.exp-timeline__cap-mark {
   width: 48px; height: 48px;
   border-radius: 50%;
   background: var(--bg-card);
@@ -75,7 +74,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  position: relative;
+}
+.exp-timeline__cap-mark::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 5px var(--accent-dim);
 }
 .exp-timeline__cap p {
   font-family: var(--font-mono);
@@ -126,10 +133,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
   z-index: 2;
   box-shadow: 0 0 0 5px var(--bg);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.exp-item__dot-mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--card-accent);
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--card-accent) 18%, transparent);
 }
 .exp-item__dot:hover {
   transform: translateX(-50%) scale(1.12);

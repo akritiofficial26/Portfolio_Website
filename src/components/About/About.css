@@ -62,6 +62,15 @@
   font-size: 1.4rem;
 }
 
+.about__badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 5px var(--accent-dim);
+  flex-shrink: 0;
+}
+
 .about__img-badge strong {
   display: block;
   font-size: 13px;
@@ -100,8 +109,12 @@
   transform: translateY(-2px);
 }
 
-.about__fact-icon {
-  font-size: 1.4rem;
+.about__fact-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-dim);
   flex-shrink: 0;
 }
 
