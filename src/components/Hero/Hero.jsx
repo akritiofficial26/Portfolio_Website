@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Hero.css';
+import profileImg from '../About/image.jpg';
 
 const Hero = () => {
   const taglineRef = useRef(null);
@@ -92,17 +93,17 @@ const Hero = () => {
       <div className="hero__visual">
         <div className="hero__avatar-ring">
           <div className="hero__avatar">
-            <span>A</span>
+            <img src={profileImg} alt="Akriti" className="hero__avatar-image" />
           </div>
           <div className="hero__orbit">
             <div className="hero__orbit-dot hero__orbit-dot--1">
-              <span>⚡</span>
+              <span className="ui-dot" aria-hidden="true" />
             </div>
             <div className="hero__orbit-dot hero__orbit-dot--2">
-              <span>🎨</span>
+              <span className="ui-dot" aria-hidden="true" />
             </div>
             <div className="hero__orbit-dot hero__orbit-dot--3">
-              <span>🚀</span>
+              <span className="ui-dot" aria-hidden="true" />
             </div>
           </div>
         </div>

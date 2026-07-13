@@ -22,7 +22,7 @@ const Footer = () => {
       <div className="container footer__inner">
         <div className="footer__brand">
           <a href="#home" className="footer__logo">
-            <span className="footer__logo-dot">✦</span> Akriti
+            <span className="footer__logo-dot ui-dot" aria-hidden="true" /> Akriti
           </a>
           <p className="footer__tagline">
             Crafting digital experiences with<br />

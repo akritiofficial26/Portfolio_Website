@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <a href="#home" className="navbar__logo">
-          <span className="navbar__logo-dot">✦</span> Akriti Kumari
+          <span className="navbar__logo-dot ui-dot" aria-hidden="true" /> Akriti Kumari
         </a>
 
         <ul className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>

@@ -17,6 +17,15 @@
   --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.ui-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(200, 240, 74, 0.08);
+  flex-shrink: 0;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
