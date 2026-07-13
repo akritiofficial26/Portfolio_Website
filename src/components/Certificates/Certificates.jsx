@@ -32,6 +32,36 @@ const certificates = [
     accent: '#f97316',
     badge: 'Design',
   },
+  {
+    id: 4,
+    title: 'JavaScript Algorithms',
+    issuer: 'freeCodeCamp',
+    year: '2023',
+    description:
+      'Built a stronger foundation in data structures, problem solving, and clean JavaScript logic.',
+    accent: '#a78bfa',
+    badge: 'JS',
+  },
+  {
+    id: 5,
+    title: 'Responsive Web Design',
+    issuer: 'Google Digital Garage',
+    year: '2023',
+    description:
+      'Practiced mobile-first layouts, flexible components, and accessibility-aware page structure.',
+    accent: '#22c55e',
+    badge: 'Responsive',
+  },
+  {
+    id: 6,
+    title: 'TypeScript Fundamentals',
+    issuer: 'Udemy',
+    year: '2024',
+    description:
+      'Covered typed components, safer refactoring, and maintaining larger frontend codebases.',
+    accent: '#fb7185',
+    badge: 'TS',
+  },
 ];
 
 const Certificates = () => {
