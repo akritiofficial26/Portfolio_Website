@@ -68,14 +68,14 @@
 
 .exp-timeline__cap span,
 .exp-timeline__cap-dot span {
-  width: 48px; height: 48px;
+  width: 28px; height: 28px;
   border-radius: 50%;
   background: var(--bg-card);
   border: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 0;
 }
 .exp-timeline__cap p {
   font-family: var(--font-mono);
@@ -94,7 +94,7 @@
 }
 .exp-timeline__cap-pulse {
   position: absolute;
-  inset: -6px;
+  inset: -4px;
   border-radius: 50%;
   border: 2px solid #22c55e;
   animation: dotPulse 2s ease infinite;
@@ -119,25 +119,25 @@
   left: 50%;
   transform: translateX(-50%);
   top: 18px;
-  width: 54px; height: 54px;
+  width: 28px; height: 28px;
   border-radius: 50%;
   background: var(--bg-card);
   border: 2px solid var(--card-accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.35rem;
+  font-size: 0;
   z-index: 2;
-  box-shadow: 0 0 0 5px var(--bg);
+  box-shadow: 0 0 0 3px var(--bg);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .exp-item__dot:hover {
-  transform: translateX(-50%) scale(1.12);
-  box-shadow: 0 0 0 5px var(--bg), 0 0 28px var(--card-accent);
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 20px var(--card-accent);
 }
 .exp-item__dot-pulse {
   position: absolute;
-  inset: -7px;
+  inset: -5px;
   border-radius: 50%;
   border: 2px solid var(--card-accent);
   animation: dotPulse 2s ease infinite;
@@ -322,7 +322,7 @@
   }
   .exp-item--visible { transform: translateY(0) !important; }
 
-  .exp-item__dot { left: 26px; top: 14px; width: 44px; height: 44px; font-size: 1.1rem; }
+  .exp-item__dot { left: 26px; top: 14px; width: 22px; height: 22px; }
 
   .exp-item__year {
     position: static;
