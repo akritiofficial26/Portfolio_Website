@@ -325,7 +325,8 @@
   }
   .hero__visual { order: -1; }
   .hero__avatar-ring { width: 220px; height: 220px; }
-  .hero__avatar { width: 160px; height: 160px; font-size: 3.5rem; }
+  .hero__avatar { width: 160px; height: 160px; }
+  .hero__avatar-image { transform: scale(1.1); }
   .hero__actions { justify-content: center; }
   .hero__socials { justify-content: center; }
   .hero__badge { display: flex; justify-content: center; }

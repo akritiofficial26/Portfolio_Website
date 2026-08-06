@@ -190,7 +190,6 @@ const Experience = () => {
 
           <div className="exp-timeline__cap exp-timeline__cap--top">
             <span className="exp-timeline__cap-mark" aria-hidden="true" />
-            
           </div>
 
           {journey.map((item, i) => (

@@ -20,7 +20,7 @@ const About = () => {
               <img src={profileImg} alt="Akriti" className="about__img" />
             </div>
             <div className="about__img-badge">
-                <span className="about__badge-dot" aria-hidden="true" />
+              <span className="about__badge-dot" aria-hidden="true" />
               <div>
                 <strong>Open to Work</strong>
                 <p>Full-time / Freelance</p>

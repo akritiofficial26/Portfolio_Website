@@ -52,25 +52,21 @@ const Contact = () => {
 
   const contacts = [
     {
-      icon: '✉️',
       label: 'Email',
       value: 'akritiofficial26@gmail.com',
       href: 'mailto:akritiofficial26@gmail.com',
     },
     {
-      icon: '💼',
       label: 'LinkedIn',
       value: 'linkedin.com/in/akriti',
       href: 'https://www.linkedin.com/in/akriti-kumari-26a24b2b8/',
     },
     {
-      icon: '🐙',
       label: 'GitHub',
       value: 'github.com/akriti',
       href: 'https://github.com/akritiofficial26',
     },
     {
-      icon: '📍',
       label: 'Location',
       value: 'Gurugram, India',
       href: null,
@@ -97,7 +93,7 @@ const Contact = () => {
           <div className="contact__cards">
             {contacts.map(c => (
               <div className="contact__card" key={c.label}>
-                <span className="contact__card-icon">{c.icon}</span>
+                <span className="contact__card-icon"><span className="ui-dot" aria-hidden="true" /></span>
                 <div>
                   <div className="contact__card-label">{c.label}</div>
                   {c.href ? (
@@ -121,7 +117,7 @@ const Contact = () => {
         <div className="contact__form-wrap">
           {status === 'sent' ? (
             <div className="contact__success">
-              <div className="contact__success-icon">🎉</div>
+              <div className="contact__success-icon"><span className="ui-dot" aria-hidden="true" /></div>
               <h3>Message Sent!</h3>
               <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
               <button className="btn btn-primary" onClick={() => setStatus('idle')}>
@@ -140,7 +136,7 @@ const Contact = () => {
                   fontSize: '13px',
                   color: '#f87171',
                 }}>
-                  ⚠️ Something went wrong. Please try again or email me directly at akritiofficial26@gmail.com
+                  Something went wrong. Please try again or email me directly at akritiofficial26@gmail.com
                 </div>
               )}
 

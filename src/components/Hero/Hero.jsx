@@ -97,13 +97,13 @@ const Hero = () => {
           </div>
           <div className="hero__orbit">
             <div className="hero__orbit-dot hero__orbit-dot--1">
-                <span className="hero__orbit-dot-mark" aria-hidden="true" />
+              <span className="hero__orbit-dot-mark" aria-hidden="true" />
             </div>
             <div className="hero__orbit-dot hero__orbit-dot--2">
-                <span className="hero__orbit-dot-mark" aria-hidden="true" />
+              <span className="hero__orbit-dot-mark" aria-hidden="true" />
             </div>
             <div className="hero__orbit-dot hero__orbit-dot--3">
-                <span className="hero__orbit-dot-mark" aria-hidden="true" />
+              <span className="hero__orbit-dot-mark" aria-hidden="true" />
             </div>
           </div>
         </div>
