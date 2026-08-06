@@ -4,33 +4,36 @@ import './Certificates.css';
 const certificates = [
   {
     id: 1,
-    title: 'Frontend Development',
-    issuer: 'LinkedIn Learning',
+    title: 'Internshala Certificate',
+    issuer: 'Internshala',
     year: '2025',
-    description:
-      'Covered modern frontend workflows, responsive UI patterns, and component-based application structure.',
     accent: '#c8f04a',
-    badge: 'UI',
+    badge: 'Image',
+    mediaType: 'image',
+    mediaSrc: '/images/internshala.jpeg',
+    link: '/images/internshala.jpeg',
   },
   {
     id: 2,
-    title: 'React.js Essentials',
-    issuer: 'Coursera',
-    year: '2024',
-    description:
-      'Focused on state management, reusable components, and building interactive single-page applications.',
+    title: 'Frontend Edunet Certificate',
+    issuer: 'Edunet Foundation',
+    year: '2025',
     accent: '#38bdf8',
-    badge: 'React',
+    badge: 'Image',
+    mediaType: 'image',
+    mediaSrc: '/images/Fronetnd-edunet.jpg',
+    link: '/images/Fronetnd-edunet.jpg',
   },
   {
     id: 3,
-    title: 'UI/UX Design',
-    issuer: 'Figma Community',
+    title: 'NPTEL Certificate',
+    issuer: 'NPTEL',
     year: '2024',
-    description:
-      'Explored design systems, wireframing, and prototyping workflows for polished digital experiences.',
     accent: '#f97316',
-    badge: 'Design',
+    badge: 'Image',
+    mediaType: 'image',
+    mediaSrc: '/images/nptel-certificate.jpg',
+    link: '/images/nptel-certificate.jpg',
   },
 ];
 
@@ -53,6 +56,21 @@ const Certificates = () => {
                 animationDelay: `${index * 0.08}s`,
               }}
             >
+              <a className="certificate-card__media" href={certificate.link} target="_blank" rel="noreferrer">
+                {certificate.mediaType === 'image' ? (
+                  <img
+                    className="certificate-card__image"
+                    src={certificate.mediaSrc}
+                    alt={`${certificate.title} preview`}
+                  />
+                ) : (
+                  <div className="certificate-card__document">
+                    <span className="certificate-card__document-label">Document</span>
+                    <span className="certificate-card__document-title">Open certificate</span>
+                  </div>
+                )}
+              </a>
+
               <div className="certificate-card__top">
                 <span className="certificate-card__badge">{certificate.badge}</span>
                 <span className="certificate-card__year">{certificate.year}</span>
