@@ -1,7 +1,8 @@
 import React from 'react';
 import './About.css';
-import profileImg from './image.jpg';
 import resumePdf from './Akriti_Updated_Resume.pdf';
+
+const profileImg = '/images/standing%20profile.png';
 
 const About = () => {
   const facts = [
@@ -13,7 +14,6 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="container about__inner">
-        {/* Left: Image area */}
         <div className="about__visual">
           <div className="about__img-wrap">
             <div className="about__img-placeholder">
@@ -41,7 +41,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Right: Text */}
         <div className="about__text">
           <div className="section-label">About Me</div>
           <h2 className="section-title">

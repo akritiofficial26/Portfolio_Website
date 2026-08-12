@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './Hero.css';
-import profileImage from '../About/image.jpg';
+
+const profileImage = '/images/profile.png';
 
 const Hero = () => {
   const taglineRef = useRef(null);
@@ -38,10 +39,8 @@ const Hero = () => {
 
   return (
     <section className="hero" id="home">
-      {/* Decorative grid */}
       <div className="hero__grid" aria-hidden="true" />
 
-      {/* Floating orbs */}
       <div className="hero__orb hero__orb--1" aria-hidden="true" />
       <div className="hero__orb hero__orb--2" aria-hidden="true" />
 
@@ -89,7 +88,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right visual */}
       <div className="hero__visual">
         <div className="hero__avatar-ring">
           <div className="hero__avatar">
@@ -124,11 +122,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll hint */}
-      <div className="hero__scroll">
-        <div className="hero__scroll-line" />
-        <span>Scroll</span>
-      </div>
     </section>
   );
 };
