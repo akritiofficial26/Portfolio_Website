@@ -12,8 +12,18 @@ const projects = [
     githubUrl: "https://github.com/adisharma-git/employee-management-system",
     liveUrl: "https://www.workalignr.in/landingPage",
   },
-  {
+   {
     id: 2,
+    tag: "Frontend",
+    title: "SprintDesk",
+    desc: "A modern task management dashboard designed to streamline team collaboration, task tracking, and project workflows**SprintDesk — A modern project management platform designed to help teams organize tasks, track progress, manage priorities, and collaborate efficiently through a clean and intuitive dashboard.",
+    tech: ["React", "Typescript", "Tailwind css"],
+    color: "#c8f04a",
+    githubUrl: "https://github.com/akritiofficial26/sprintdesk",
+    liveUrl: "https://sprintdesk-sigma.vercel.app/login",
+  },
+  {
+    id: 3,
     tag: "Dev",
     title: "Library Attendance System",
     desc: "A digital library management and attendance system that automates student check-ins, tracks usage patterns, and maintains records efficiently. Built with a structured backend and clean UI, it enhances transparency and reduces manual workload for administrators.",
@@ -23,7 +33,7 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 3,
+    id: 4,
     tag: "Frontend",
     title: "CafeNest",
     desc: "A modern and visually engaging website for a coffee brand, designed to showcase products, menu, and brand story. Focused on smooth user experience, aesthetic UI, and responsive design, it creates a warm and inviting digital presence for customers.",
@@ -33,27 +43,25 @@ const projects = [
     liveUrl: "",
   },
   {
-    id: 4,
+    id: 5,
     tag: "UI/UX",
     title: "Heal App",
     desc: "A user-centric health application tailored for women managing PCOS/PCOD. It helps track symptoms, cycles, and lifestyle habits while providing personalized insights and wellness recommendations to support better health decisions.",
     tech: ["Figma"],
     color: "#38bdf8",
-    liveUrl:
-      "https://www.figma.com/design/TFaJoDFTmg3QES3maUCYaY/HEAL?t=JuVocuLZuv3qtazk-0",
+    liveUrl:"https://www.figma.com/design/TFaJoDFTmg3QES3maUCYaY/HEAL?t=JuVocuLZuv3qtazk-0",
   },
   {
-    id: 5,
+    id: 6,
     tag: "ui/ux",
     title: "Jwels",
     desc: "A sleek and elegant UI/UX design for a jewelry e-commerce app, focused on premium user experience. It emphasizes product visualization, smooth navigation, and a luxurious feel to enhance user engagement and conversion, A digital gallery platform for independent artists to showcase and sell their work with NFT minting support.",
     tech: ["Figma"],
     color: "#fb7185",
-    liveUrl:
-      "https://www.figma.com/design/XjWsJ3lDIiDL4STBcwsweA/Jewelry-app-design?node-id=0-1&p=f&t=JuVocuLZuv3qtazk-0",
+    liveUrl:"https://www.figma.com/design/XjWsJ3lDIiDL4STBcwsweA/Jewelry-app-design?node-id=0-1&p=f&t=JuVocuLZuv3qtazk-0",
   },
   {
-    id: 6,
+    id: 7,
     tag: "Frontend",
     title: "EduBroadcast — Content Broadcasting System",
     desc: "Built a React.js educational platform with role-based access — enabling teachers to upload content, principals to moderate it, and students to stream approved broadcasts on a public page.",
@@ -65,8 +73,6 @@ const projects = [
 ];
 
 const filters = ["All"];
-
-// const filters = ['All', 'Development', 'Designing'];
 
 const Projects = () => {
   const [active, setActive] = useState("All");
@@ -82,7 +88,6 @@ const Projects = () => {
           Selected <em>Projects</em>
         </h2>
 
-        {/* Filter bar */}
         <div className="projects__filters">
           {filters.map((f) => (
             <button
@@ -95,7 +100,6 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Grid */}
         <div className="projects__grid">
           {filtered.map((p, i) => (
             <div
