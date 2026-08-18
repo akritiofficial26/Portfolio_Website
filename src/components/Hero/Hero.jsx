@@ -77,7 +77,7 @@ const Hero = () => {
 
         <div className="hero__socials">
           {[
-            { label: 'GitHubhttps://github.com/akritiofficial26', href: '#', icon: 'GH' },
+            { label: 'https://github.com/akritiofficial26', href: '#', icon: 'GH' },
             { label: 'https://www.linkedin.com/in/akriti-kumari-26a24b2b8/', href: '#', icon: 'LI' },
             
           ].map(s => (
