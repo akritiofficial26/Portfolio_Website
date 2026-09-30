@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     tag: "Frontend",
     title: "SprintDesk",
-    desc: "A modern task management dashboard designed to streamline team collaboration, task tracking, and project workflows**SprintDesk — A modern project management platform designed to help teams organize tasks, track progress, manage priorities, and collaborate efficiently through a clean and intuitive dashboard.",
+    desc: "A modern task management dashboard designed to streamline team collaboration, task tracking, and project workflows. SprintDesk — A modern project management platform designed to help teams organize tasks, track progress, manage priorities, and collaborate efficiently through a clean and intuitive dashboard.",
     tech: ["React", "Typescript", "Tailwind css"],
     color: "#c8f04a",
     githubUrl: "https://github.com/akritiofficial26/sprintdesk",
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     id: 3,
-    tag: "Dev",
+    tag: "Full Stack",
     title: "Library Attendance System",
     desc: "A digital library management and attendance system that automates student check-ins, tracks usage patterns, and maintains records efficiently. Built with a structured backend and clean UI, it enhances transparency and reduces manual workload for administrators.",
     tech: ["React", "Node.js", "Tailwind css", "Express.js", "PostgreSql"],
@@ -40,7 +40,7 @@ const projects = [
     tech: ["React", "Tailwind"],
     color: "#f97316",
     githubUrl: "https://github.com/akritiofficial26/Cafe-Nest",
-    liveUrl: "",
+    liveUrl: "https://cafe-nest-kappa.vercel.app/",
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     id: 6,
-    tag: "ui/ux",
+    tag: "UI/UX",
     title: "Jwels",
     desc: "A sleek and elegant UI/UX design for a jewelry e-commerce app, focused on premium user experience. It emphasizes product visualization, smooth navigation, and a luxurious feel to enhance user engagement and conversion, A digital gallery platform for independent artists to showcase and sell their work with NFT minting support.",
     tech: ["Figma"],
@@ -72,7 +72,7 @@ const projects = [
   },
 ];
 
-const filters = ["All"];
+const filters = ["All", "UI/UX", "Frontend", "Full Stack"];
 
 const Projects = () => {
   const [active, setActive] = useState("All");
@@ -94,6 +94,7 @@ const Projects = () => {
               key={f}
               className={`projects__filter ${active === f ? "projects__filter--active" : ""}`}
               onClick={() => setActive(f)}
+              aria-pressed={active === f}
             >
               {f}
             </button>
